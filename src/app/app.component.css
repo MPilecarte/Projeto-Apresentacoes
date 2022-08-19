@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.corpo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+table{
+  border: 1px solid black;
+}
+
+
+.card-back{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: blue;
+}
