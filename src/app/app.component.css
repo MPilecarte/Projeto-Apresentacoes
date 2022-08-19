@@ -14,9 +14,9 @@ table{
 
 
 .card-back{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  display: inline-flex;
+  margin-top: 150px;
+  flex-wrap: wrap;
   border-radius: 20px;
-  background-color: blue;
+  background-color: rgb(223, 223, 223);
 }
