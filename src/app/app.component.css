@@ -3,24 +3,24 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-
   font-family: 'Raleway', sans-serif;
 }
 .corpo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 100px;
-} 
-
+  gap: 200px;
+}
+/* Card Mayara */
 .card{
   background-color: transparent;
   width: 400px;
   height: 600px;
-  border: 1px solid #f1f1f1;
+  margin-top: 100px;
   perspective: 1000px;
   box-shadow: rgba(65, 65, 70, 0.05) 0px 4px 16px, rgba(75, 75, 84, 0.05) 0px 8px 32px;
+
 }
 .card-back{
   border-radius: 10px;
@@ -32,7 +32,6 @@
   border-radius: 10px;
   background-color: #f0dfff;
   font-size: 15px;
-
 }
 .content-card{
   margin-top: 60px;
@@ -74,16 +73,47 @@
   backface-visibility: hidden;
 }
 
-/* .more{
-  position: absolute;
-  right: 20px;
-  top: 5px;
-  font-size: 30px;
-  font-weight: 800;
-  width: 25px;
-  height: 25px;
-  text-align: justify;
-  border: 1px solid #000;
-  border-radius: 50px;
-} */
+/* Card Nicolly */
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 600px;
+  perspective: 1000px;
+  margin-top: 100px;
+  box-shadow: rgba(65, 65, 70, 0.05) 0px 4px 16px, rgba(75, 75, 84, 0.05) 0px 8px 32px;
 
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: bisque;
+  color: black;
+  border-radius: 15px;
+}
+
+.flip-card-back {
+  background-color: bisque;
+  transform: rotateY(180deg);
+  font-family: 'Raleway', sans-serif;
+  border-radius: 15px;
+  font-size: 22px;
+}
+button{
+  height: 50px;
+  width: 90px;
+  margin-top: 20px;
+  background-color: rgb(255, 201, 136);
+  border: 0;
+  border-radius: 10px;
+  font-size: 25px;
+  cursor: pointer;
+} 
